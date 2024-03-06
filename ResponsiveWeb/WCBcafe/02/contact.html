@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
-        <div class="big-bg" id="menu">
+        <div class="big-bg" id="contact">
             <header class="page-header wrapper">
                 <h1>
                     <a href="index.html"> <img src="../../../siteimages/logo.svg" alt="WCB 카페 홈" class="logo" /></a>
@@ -36,51 +36,67 @@
                 </nav>
             </header>
 
-            <div class="menu-content wrapper">
-                <h2 class="page-title">Menu</h2>
-                <p>
-                    몸에 좋은 자연 식품을 제공하는 WCB CAFE입니다. 첨가물을 넣지 않은 재료를 사용한 메뉴가 특징입니다.
-                    맛있는 블렌드 커피와 건강한 유기농 음식으로 맛과 몸의 건강을 함께 챙기세요.
-                </p>
+            <div class="wrapper">
+                <h2 class="page-title">Contact</h2>
+                <form action="#">
+                    <div>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" name="your-name" />
+                    </div>
+
+                    <div>
+                        <label for="email"> 메일 주소</label>
+                        <input type="email" id="email" name="your-email" />
+                    </div>
+
+                    <div>
+                        <label for="message">메시지</label>
+                        <textarea name="your-message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <input type="submit" class="button" value="전송" />
+                </form>
             </div>
         </div>
 
-        <!-- 타일 컨텐츠 -->
-        <div class="wrapper grid">
-            <div class="item big-box">
-                <img src="../../../siteimages/menu1.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
+        <section id="location">
+            <div class="wrapper">
+                <div>
+                    <h3 class="location-info">카페 강남비트캠프점</h3>
+                    <p>
+                        주소: 서울 강남구 강남대로 94길 20<br />
+                        삼오빌딩 7층<br />
+                        전화번호: 02-3486-4600<br />
+                        영업시간: 09:00 ~ 22:00<br />
+                        휴무일: 매주 화요일
+                    </p>
+                </div>
+                <div class="location-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25322.883719685437!2d126.9909166743164!3d37.4994156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca194d4bb162f%3A0x9612cf895f23eaca!2z67mE7Yq47Lqg7ZSEIOqwleuCqOuzuOybkA!5e0!3m2!1sko!2skr!4v1709707610510!5m2!1sko!2skr"
+                        width="800"
+                        height="400"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-            <div class="item">
-                <img src="../../../siteimages/menu2.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
-            </div>
-            <div class="item">
-                <img src="../../../siteimages/menu3.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
-            </div>
-            <div class="item">
-                <img src="../../../siteimages/menu4.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
-            </div>
-            <div class="item">
-                <img src="../../../siteimages/menu5.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
-            </div>
-            <div class="item">
-                <img src="../../../siteimages/menu6.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
-            </div>
-            <div class="item">
-                <img src="../../../siteimages/menu7.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
-            </div>
-            <div class="item">
-                <img src="../../../siteimages/menu8.jpg" alt="" />
-                <p>메뉴 사진과 메뉴의 이름</p>
-            </div>
-        </div>
+        </section>
 
+        <section id="sns">
+            <div class="wrapper">
+                <div class="sns-box">
+                    <h3 class="sub-title">Facebook</h3>
+                </div>
+                <div class="sns-box">
+                    <h3 class="sub-title">Twitter</h3>
+                </div>
+                <div class="sns-box">
+                    <h3 class="sub-title">Youtube</h3>
+                </div>
+            </div>
+        </section>
         <footer>
             <div class="wrapper">
                 <p><small>&copy; 2024 NaturalDesign</small></p>
