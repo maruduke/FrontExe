@@ -146,8 +146,191 @@ footer p {
 }
 /*news-contents의 메인 기사와 사이드바의 크기 지정*/
 article {
-    width: 74%;
+    order: 2;
+    width: 60%;
 }
 aside {
-    width: 24%;
+    order: 3;
+    width: 22%;
+}
+
+.ad {
+    order: 1;
+}
+
+.post-info {
+    position: relative; /*이 요소의 자식에 absolute속성을 부여하면 현재 이 요소를 기준으로 위치를 정할 수 있다.*/
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+
+.post-date {
+    width: 100px;
+    height: 100px;
+    background: #0bd;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.625rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    padding-top: 10px;
+}
+
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(255, 255, 255, 0.5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.post-title {
+    font-family: '나눔명조', nanummyeongjo, serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.post-title,
+.post-cat {
+    margin-left: 120px;
+}
+
+article img {
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 1rem;
+}
+
+/* 사이드 바
+------------------------ */
+
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #0bd solid; /*아래에 선을 설정*/
+    font-weight: normal;
+}
+
+aside p {
+    padding: 12px 10px;
+}
+
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+
+.sub-menu a {
+    color: #432;
+    padding: 10px;
+    display: block; /*링크로 선택할 수 있는 영역 늘림*/
+}
+
+.sub-menu a:hover {
+    color: #0bd;
+}
+
+#menu {
+    background-image: url('../../../../siteimages/menu-bg.jpg');
+    min-height: 100vh;
+}
+
+.menu-content .page-title {
+    text-align: center;
+}
+
+.menu-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 0;
+}
+
+/* 0~600px 사이의 화면에 적용 */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    /*2) 헤더의 로고와 nav 메뉴를 수직으로 정렬*/
+    .page-header {
+        font-size: 2.5rem;
+    }
+
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HEADER  */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* HOME */
+    .home-content {
+        margin-top: 20%;
+    }
+
+    /* 3) 메인 영역의 article과 aside를 수평 -> 수직으로 정렬 변경 */
+    /* NEWS*/
+    .news-contents {
+        flex-direction: column;
+    }
+
+    article,
+    aside {
+        width: 100%;
+    }
+
+    /* 4) article과 aside의 문자 크기와 여백 조정*/
+    #news .page-title {
+        margin-top: 30px;
+    }
+
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+
+    .post-title {
+        font-size: 1.375rem;
+    }
+
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
+    }
+
+    /* MENU */
+    .menu-content {
+        margin-top: 20%;
+    }
 }
