@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <script>
+            let num = Number(prompt('숫자입력', 0));
+
+            for (let i = 0; i < num / 2 - 1; i++) {
+                for (let j = 0; j < num / 2 - i; j++) {
+                    document.write('&nbsp;');
+                }
+                for (let j = 0; j < 2 * i + 1; j++) {
+                    document.write('*');
+                }
+                document.write('<br>');
+            }
+
+            for (let i = Math.floor(num / 2); i <= num; i++) {
+                console.log(i);
+                for (let j = 0; j < i - num / 2; j++) {
+                    document.write('&nbsp;');
+                }
+
+                for (let j = 0; j < (num - i) * 2 + 1; j++) {
+                    document.write('*');
+                }
+
+                document.write('<br>');
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
